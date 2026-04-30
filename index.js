@@ -4,7 +4,14 @@ const app = express();
 const port = process.env.PORT || 8000;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.status(200).json({
+    message: "Hello from Server V2 ✌🏻"
+  })
+});
+app.get('/health', (req, res) => {
+  res.status(200).json({
+    message: "Healthy ✅"
+  })
 });
 
 app.listen(port, () => {
