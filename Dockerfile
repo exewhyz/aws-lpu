@@ -1,9 +1,9 @@
 FROM node:22-alpine
 
 WORKDIR /app
-# install curl
 
-# RUN apk add --no-cache curl
+# install curl
+RUN apk add --no-cache curl
 
 COPY package*.json ./
 

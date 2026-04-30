@@ -5,7 +5,7 @@ const port = process.env.PORT || 8000;
 
 app.get('/', (req, res) => {
   res.status(200).json({
-    message: "Hello from Server V2 ✌🏻"
+    message: "Hello from Server V3 ✌🏻"
   })
 });
 app.get('/health', (req, res) => {
